@@ -707,7 +707,7 @@ SPOT_TO_DISTRICT = {
 # ==================== 数据加载 ====================
 def load_comments():
     comments = []
-    filename = r'E:\use\the end\new\chongqing_comments_cleaned (2).csv'
+    filename = 'chongqing_comments_cleaned (2).csv'
     
     try:
         with open(filename, 'r', encoding='utf-8-sig') as f:
