@@ -11,6 +11,7 @@ import uuid
 import urllib.parse
 from datetime import datetime
 import time
+from flask import render_template
 
 app = Flask(__name__)
 app.secret_key = 'travel-assistant-secret-key-2024'
