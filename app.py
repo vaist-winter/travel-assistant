@@ -1390,6 +1390,10 @@ def index():
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/test')
+def test():
+    return "Hello! 后端正常运行！"
 # ==================== 启动 ====================
 if __name__ == '__main__':
     import os
