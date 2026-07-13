@@ -1379,21 +1379,8 @@ def health():
 
 @app.route('/')
 def index():
-    return jsonify({
-        'message': '智能旅游助手 API 已启动（和风天气实时数据）',
-        'server_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'endpoints': {
-            '/api/ask': 'POST - 提问',
-            '/api/health': 'GET - 健康检查'
-        }
-    })
-@app.route('/')
-def index():
     return render_template('index.html')
 
-@app.route('/test')
-def test():
-    return "Hello! 后端正常运行！"
 # ==================== 启动 ====================
 if __name__ == '__main__':
     import os
