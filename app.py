@@ -1387,7 +1387,9 @@ def index():
             '/api/health': 'GET - 健康检查'
         }
     })
-
+@app.route('/')
+def index():
+    return render_template('index.html')
 # ==================== 启动 ====================
 if __name__ == '__main__':
     import os
